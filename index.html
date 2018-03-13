@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Triangulo</title>
+    </head>
+    <style>
+        body{
+            background: #080808;
+        }
+    .triangulo{
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right:200px solid #D10BB0;
+        margin-left:620px;
+        margin-top:240px;   
+        animation-name: anim1; 
+        animation-duration: 5s;
+        animation-iteration-count: infinite; 
+    
+        
+    }
+   
+.triangulo1{
+    width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 200px solid red;
+	border-bottom:100px solid transparent;
+    margin-left: 420px;
+    margin-top:-200px;
+    animation-name: anim2; 
+        animation-duration: 5s;
+        animation-iteration-count: infinite; 
+}
+.triangulo2{
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 100px solid #5F0268;
+    margin-left: 420px;
+    margin-top:-200px;
+    animation-name: anim3; 
+        animation-duration: 5s;
+        animation-iteration-count: infinite; 
+}
+.triangulo3{
+    width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 100px solid #2208B1;
+    margin-left: 420px;
+    margin-top:-0px;
+    animation-name: anim4; 
+        animation-duration: 5s;
+        animation-iteration-count: infinite; 
+}
+    
+     @keyframes anim1{
+         0%{transform: rotateY(340deg);}
+         10%{transform: rotateY(360deg);}
+         150%{transform: rotateY(360deg);}
+        
+     }
+     @keyframes anim2{
+         0%{transform: rotateX(340deg);}
+         10%{transform: rotateX(360deg);}
+         150%{transform: rotateY(360deg);}
+        
+     }
+     @keyframes anim3{
+         0%{transform: rotateY(-340deg);}
+         10%{transform: rotateY(-360deg);}
+         150%{transform: rotateY(360deg);}
+      
+     }
+     @keyframes anim4{
+         0%{transform: rotateX(340deg);}
+         10%{transform: rotateX(360deg);}
+         150%{transform: rotateY(360deg);}
+        
+     }
+     @keyframes anim5 {
+  
+     0%{transform: translateX(0px);}
+     50%{transform: translateX(1050px);}
+      100%{background: yellow}
+  
+     }
+  
+ 
+     
+     .circulo{
+         width: 100px;
+         height: 100px;
+         border-radius: 60%;
+         background: firebrick;
+         animation-name: anim5;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+     }
+  
+    </style>
+    <body>
+        <div class="triangulo"></div>
+        <div class="triangulo1"></div>
+        <div class="triangulo2"></div>
+        <div class="triangulo3"></div>
+        <div class="circulo"></div>
+    
+    </body>
+</html>
